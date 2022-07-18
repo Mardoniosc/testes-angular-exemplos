@@ -1,12 +1,7 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { asyncData, asyncError } from 'src/testing/async-observable-helpers';
+import { Post } from '../models/post';
 import { BlogService } from './blog.service';
-
-interface Post {
-  id: number;
-  title: string;
-  author: string;
-}
 
 /**
  * @Test Testando service assincronos
