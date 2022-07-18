@@ -9,7 +9,6 @@ import { Post } from '../models/post';
 export class BlogService {
   constructor(private http: HttpClient) {}
 
-  // TODO: rodar o
   getAllPosts(): Observable<Post[]> {
     return this.http.get<Post[]>('http://localhost:3000/posts');
   }
