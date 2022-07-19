@@ -36,7 +36,7 @@ describe('BlogDemoComponent', () => {
       .toBe(false);
   });
 
-  it('#clique() deve definia a #mensagem to "está Ligada"', () => {
+  it('#clique() deve definia a #mensagem para "está Ligada"', () => {
     const comp = new BlogDemoComponent();
     expect(comp.message)
       .withContext('Inicia desligado')
