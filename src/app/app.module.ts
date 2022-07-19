@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BlogDemoComponent } from './components/blog-demo/blog-demo.component';
 import { DashboardHeroComponent } from './components/TesteHero/dashboard-hero/dashboard-hero.component';
+import { TitlePipe } from './pipes/title.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogDemoComponent,
-    DashboardHeroComponent
+    DashboardHeroComponent,
+    TitlePipe
   ],
   imports: [
     BrowserModule,
