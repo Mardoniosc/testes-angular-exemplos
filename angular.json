@@ -101,6 +101,37 @@
             "scripts": [],
             "codeCoverage": true
           }
+        },
+        "cypress-run": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "app-teste:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "app-teste:serve:production"
+            }
+          }
+        },
+        "cypress-open": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "watch": true,
+            "headless": false
+          }
+        },
+        "e2e": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "app-teste:serve",
+            "watch": true,
+            "headless": false
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "app-teste:serve:production"
+            }
+          }
         }
       }
     }
