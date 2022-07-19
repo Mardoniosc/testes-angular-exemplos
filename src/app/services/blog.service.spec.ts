@@ -32,7 +32,7 @@ describe('BlogService', () => {
       },
       error: done.fail,
     });
-    expect(httpClientSpy.get.calls.count()).withContext('one call').toBe(1);
+    expect(httpClientSpy.get.calls.count()).withContext('Uma Chamada').toBe(1);
   });
 
   it('Deve retornar um erro com status 404', (done: DoneFn) => {
@@ -65,7 +65,7 @@ describe('BlogService', () => {
       },
       error: done.fail,
     });
-    expect(httpClientSpy.get.calls.count()).withContext('one call').toBe(1);
+    expect(httpClientSpy.get.calls.count()).withContext('Uma Chamada').toBe(1);
   });
 
   it('Deve retornar um erro com status 404 ao passar um post que não existe', (done: DoneFn) => {
@@ -98,6 +98,6 @@ describe('BlogService', () => {
       },
       error: done.fail,
     });
-    expect(httpClientSpy.post.calls.count()).withContext('one call').toBe(1);
+    expect(httpClientSpy.post.calls.count()).withContext('Uma Chamada').toBe(1);
   });
 });

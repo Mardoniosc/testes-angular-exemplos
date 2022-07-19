@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { BlogDemoComponent } from './components/blog-demo/blog-demo.component';
 import { DashboardHeroComponent } from './components/TesteHero/dashboard-hero/dashboard-hero.component';
 import { TitlePipe } from './pipes/title.pipe';
+import { HighlightDirective } from './shared/highlight.directive';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogDemoComponent,
     DashboardHeroComponent,
-    TitlePipe
+    TitlePipe,
+    HighlightDirective,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
